@@ -45,11 +45,11 @@ together with the projection map, $\pi(x,y,z) = z$, restricted to $S^{2}$, we ca
 \begin{figure}[h]
     \centering
     \includegraphics[width = .8\linewidth]{Images_Lect1/image.png}
-    \caption{Torus}
+    \caption{Torus with a height function}
     \label{fig:Torus}
 \end{figure}
 \begin{example}
-Lets consider the embedding of $T^{2}= S^{1}\times S^{1}$ in $\RR^{3}$ as shown in \ref{fig:Torus}. Again we will consider the projection onto the z axis, $\pi$, restricted to $T^{2}$, along with $\phi$, the projection onto the x-y plane. 
+Lets consider the embedding of $T^{2}= S^{1}\times S^{1}$ in $\RR^{3}$ as shown in Figure \ref{fig:Torus}. Again we will consider the projection onto the z axis, $\pi$, restricted to $T^{2}$, along with $\phi$, the projection onto the x-y plane. 
 
 I have labeled 4 points on the z axis in the figure. Just like in the case of the 2 sphere, when $z < a$, there is nothing in the preimage of $\pi$, and crossing $a$, we attach a 0- cell to $\varnothing$.
 \begin{figure}[h]
@@ -59,26 +59,19 @@ I have labeled 4 points on the z axis in the figure. Just like in the case of th
     \label{fig:0handleT}
 \end{figure}
 
-Since a 0-cell is just $D^{2}$, it's boundary is $S^{1}$, which we can see as the preimage $z\in (a,b)$. The question becomes, \textit{how can we cross the point b?} The answer in this case is by attaching a 1 handle! This is illustrated below in figure ()
-\begin{figure}
-\centering
-\begin{subfigure}{.1\textwidth}
-  \centering
-  \includegraphics[width=.3\linewidth]{Images_Lect1/1handle.jpeg}
-  %\caption{A subfigure}
-  %\label{fig:sub1}
-\end{subfigure}%
-\begin{subfigure}{.1\textwidth}
-  \centering
-  \includegraphics[width=.3\linewidth]{Images_Lect1/1handle1.jpeg}
-  %caption{A subfigure}
-  %\label{fig:sub2}
-\end{subfigure}
-\caption{A figure with two subfigures}
-\label{fig:test}
+Since a 0-cell is just $D^{2}$, it's boundary is $S^{1}$, which we can see as the preimage $z\in (a,b)$. The question becomes, \textit{how can we cross the point b?} The answer in this case is by attaching a 1 handle! This is illustrated below in Figure \ref{fig:1handleT}. Similarly, to cross the point c, we again attach a 1-handle (Figure \ref{fig:1handleT2}).
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = .3\linewidth]{Images_Lect1/1handle.jpeg}
+    \caption{Attaching the first 1 handle}
+    \label{fig:1handleT}
 \end{figure}
-
-Similarly, to cross the point c, we again attach a 1-handle. Then finally, we cap off with a 2-handle.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = .3\linewidth]{Images_Lect1/1handle2.jpeg}
+    \caption{Attaching the second 1 handle}
+    \label{fig:1handleT2}
+\end{figure}Then finally, we cap off with a 2-handle to complete the picture.
 \end{example}
 \begin{remark}
 As we will see, there is a canonical way to smooth the corners so that our topological space admits a smooth structure.
