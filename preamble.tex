@@ -29,3 +29,32 @@
 \newtheorem{example}{Example}
 \newtheorem{remark}{Remark}
 \newtheorem{solution}{Solution}
+
+% Make TOC clickable
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+% Highlight quote
+\usepackage{xcolor}
+\usepackage{environ}
+\definecolor{block-gray}{gray}{0.85}
+\NewEnviron{myblock}
+{\colorbox{block-gray}{%
+\parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
+\small\addtolength{\leftskip}{10mm}
+\addtolength{\rightskip}{10mm}
+\BODY}}
+}
+\renewcommand{\quote}{\myblock}
+\renewcommand{\endquote}{\endmyblock}
+
+% Macros
+\newcommand{\definedas}[0]{\coloneqq}
+\newcommand{\dd}[2]{{\frac{\partial #1}{\partial #2}}}
+\renewcommand{\vector}[1]{\mathbf{#1}}
